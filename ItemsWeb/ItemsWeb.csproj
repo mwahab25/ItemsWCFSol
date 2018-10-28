@@ -172,6 +172,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="App_Data\categories data.txt" />
     <Content Include="Category.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
@@ -183,6 +184,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="App_Data\Menu Items.xlsx" />
+    <Content Include="App_Data\json item data.docx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Item.aspx" />
     <Content Include="Scripts\bootstrap.js" />
