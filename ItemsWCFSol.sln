@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsWCF", "ItemsWCF\ItemsWCF.csproj", "{A290E927-E1B5-409F-BFF9-025D2206B8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemsWeb", "ItemsWeb\ItemsWeb.csproj", "{175D4207-E62E-4189-A8EE-FD072638AF2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A290E927-E1B5-409F-BFF9-025D2206B8DF} = {A290E927-E1B5-409F-BFF9-025D2206B8DF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A290E927-E1B5-409F-BFF9-025D2206B8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A290E927-E1B5-409F-BFF9-025D2206B8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A290E927-E1B5-409F-BFF9-025D2206B8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A290E927-E1B5-409F-BFF9-025D2206B8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175D4207-E62E-4189-A8EE-FD072638AF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175D4207-E62E-4189-A8EE-FD072638AF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175D4207-E62E-4189-A8EE-FD072638AF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175D4207-E62E-4189-A8EE-FD072638AF2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

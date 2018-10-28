@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ItemsDB" Class="ItemsDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=ItemsDB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ItemsDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categories" Member="Categories">
+    <Type Name="Category">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category_nameAr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="category_nameEn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="category_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatsAr" Member="CatsArs">
+    <Type Name="CatsAr">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category_nameAr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="category_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatsEn" Member="CatsEns">
+    <Type Name="CatsEn">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category_nameEn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="category_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Items" Member="Items">
+    <Type Name="Item">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="item_nameAr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_nameEn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_descrptionAr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_descrptionEn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="item_size2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_price2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="item_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="category_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatItemsAr" Member="CatItemsArs">
+    <Type Name="CatItemsAr">
+      <Column Name="category_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="item_nameAr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_descrptionAr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Item_size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Item_price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Item_size2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Item_price2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="category_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CatItemsEn" Member="CatItemsEns">
+    <Type Name="CatItemsEn">
+      <Column Name="category_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="item_nameEn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="item_descrptionEn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Item_size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Item_price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Item_size2" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Item_price2" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="category_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="item_image" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:62732/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ItemsWCF" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCategories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="catinfo" nillable="true" type="q3:Categories" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertCategoriesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategories">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteCategoriesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="iteminfo" nillable="true" type="q4:Items" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertItemsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPrices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="priceinfo" nillable="true" type="q5:Prices" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertPricesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InsertPricesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCategories">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllCategoriesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="GetAllCategoriesResult" nillable="true" type="q6:ArrayOfCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ItemsWCF" minOccurs="0" name="GetAllItemsResult" nillable="true" type="q7:ArrayOfItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
